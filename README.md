@@ -170,53 +170,6 @@ Hand the resulting `artifacts/` directory back for downstream figure-making
 (belief-vector composition charts, homophily-vs-propagation-mass plots,
 error analysis, ensemble-member correlation) without re-training anything.
 
-## Running on ganymede2 (SLURM)
-
-`slurm/` has everything needed to run the full sweep on UTD's Ganymede2
-cluster. Actual available partitions (`sinfo`): `coskunuzer` (the lab's own
-condo -- 3 nodes, only 1 of them GPU, not preemptible), `cpu-preempt` (96
-nodes, CPU-only, de-prioritized), `gpu-preempt` (30 nodes, GPU, H100/L40S,
-de-prioritized), plus `turing` and `vdi` (not used here). The GPU phases
-default to `coskunuzer`; the CPU-only smoke test and final aggregation use
-`cpu-preempt` so they don't compete for the condo's single GPU node.
-Sequence:
-
-```bash
-# 1. One-time env setup -- run on the LOGIN node (needs internet), not sbatch
-bash slurm/setup_env.sh
-
-# 2. Correctness check -- dev partition, CPU, ~30s-few min
-sbatch slurm/smoke_test.slurm
-
-# 3. Optional: confirm CUDA actually works on a GPU node
-sbatch slurm/gpu_check.slurm
-
-# 4. The real sweep -- submit ONCE, it self-chains through all 4 phases
-sbatch slurm/01_baseline_search.slurm
-```
-
-Each phase (`01_baseline_search` -> `02_aria_search` -> `03_ensemble_eval` ->
-`04_aggregate`) runs for a bounded `--time_budget`, checkpoints to
-`state/*.json` after every single training run, then either resubmits
-itself (if not done) or submits the next phase (if done) -- see each
-`.slurm` file's comments. The GPU phases target `coskunuzer` (the lab's own
-condo node, not preemptible) by default. If that single GPU node is busy and
-queueing takes too long, switch `-p coskunuzer` to `-p gpu-preempt` in
-01/02/03 instead -- 30 nodes, much shorter queue wait, but a shared
-de-prioritized queue where a preemption kills the job instantly with no
-grace period. That's exactly why the per-split JSON checkpointing (not the
-time-budget buffer) is what actually protects progress if you do fall back
-to `gpu-preempt`.
-
-Everything runs directly against `/groups/bcoskunuzer/avpn/ARIA/aria_benchmark`
-rather than being copied to node-local scratch first -- deliberately, since
-this project's whole resumability design depends on every checkpoint landing
-in durable storage immediately, not only at a job's end.
-
-`slurm/common.sh` centralizes the environment (conda env path, CUDA module)
-sourced by every job script -- edit it in one place if the env name/path or
-CUDA version changes.
-
 ## Before you run anything
 
 The hyperparameter grids in `src/search_space.py` are intentionally kept

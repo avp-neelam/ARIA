@@ -1,0 +1,1129 @@
+{
+  "datasets": [
+    "cora",
+    "citeseer",
+    "pubmed",
+    "texas",
+    "wisconsin",
+    "cornell",
+    "amazon-photo",
+    "actor",
+    "usa-airports",
+    "brazil-airports",
+    "europe-airports"
+  ],
+  "models": [
+    "mlp",
+    "gcn",
+    "graphsage",
+    "gat",
+    "gps",
+    "aria",
+    "aria_phg",
+    "aria_moe",
+    "aria_ensemble"
+  ],
+  "mean_acc": {
+    "cora": {
+      "mlp": 75.85512816905975,
+      "gcn": 87.12273240089417,
+      "graphsage": 87.142853140831,
+      "gat": 87.08249092102051,
+      "gps": 85.33198833465576,
+      "aria": 81.50905132293701,
+      "aria_phg": 86.68007612228394,
+      "aria_moe": 82.53520846366882,
+      "aria_ensemble": 86.80080115795135
+    },
+    "citeseer": {
+      "mlp": 73.18339824676514,
+      "gcn": 75.89445769786835,
+      "graphsage": 75.84934175014496,
+      "gat": 75.2917331457138,
+      "gps": 75.79558610916138,
+      "aria": 75.56837677955627,
+      "aria_phg": 76.15176677703857,
+      "aria_moe": 75.1758623123169,
+      "aria_ensemble": 76.7459225654602
+    },
+    "pubmed": {
+      "mlp": 88.3367133140564,
+      "gcn": 88.32149922847748,
+      "graphsage": 89.34583902359009,
+      "gat": 87.47717797756195,
+      "gps": 89.18103277683258,
+      "aria": 70.05577862262726,
+      "aria_phg": 87.47717916965485,
+      "aria_moe": 71.46297991275787,
+      "aria_ensemble": 85.34229099750519
+    },
+    "texas": {
+      "mlp": 80.54054141044617,
+      "gcn": 60.270270109176636,
+      "graphsage": 77.56756901741028,
+      "gat": 58.91891896724701,
+      "gps": 67.83783972263336,
+      "aria": 80.81081330776215,
+      "aria_phg": 77.29729950428009,
+      "aria_moe": 81.08108222484589,
+      "aria_ensemble": 78.9189201593399
+    },
+    "wisconsin": {
+      "mlp": 85.29411852359772,
+      "gcn": 51.568630039691925,
+      "graphsage": 77.05882489681244,
+      "gat": 52.549022138118744,
+      "gps": 73.52941334247589,
+      "aria": 83.72549116611481,
+      "aria_phg": 81.5686285495758,
+      "aria_moe": 83.52941274642944,
+      "aria_ensemble": 83.13725590705872
+    },
+    "cornell": {
+      "mlp": 77.83783912658691,
+      "gcn": 40.81081211566925,
+      "graphsage": 71.08108341693878,
+      "gat": 44.054054617881775,
+      "gps": 62.162163853645325,
+      "aria": 73.78378570079803,
+      "aria_phg": 71.35135352611542,
+      "aria_moe": 72.70270586013794,
+      "aria_ensemble": 72.97297477722168
+    },
+    "amazon-photo": {
+      "mlp": 92.34793603420258,
+      "gcn": 93.83910655975342,
+      "graphsage": 95.49378395080566,
+      "gat": 94.24460053443909,
+      "gps": 95.17331123352051,
+      "aria": 89.94113385677338,
+      "aria_phg": 95.23217439651489,
+      "aria_moe": 89.8234099149704,
+      "aria_ensemble": 93.80640506744385
+    },
+    "actor": {
+      "mlp": 35.97368597984314,
+      "gcn": 28.671053647994995,
+      "graphsage": 34.4342115521431,
+      "gat": 28.453948199748993,
+      "gps": 34.68421161174774,
+      "aria": 33.82894903421402,
+      "aria_phg": 34.53289598226547,
+      "aria_moe": 34.394738376140594,
+      "aria_ensemble": 34.49342221021652
+    },
+    "usa-airports": {
+      "mlp": 25.041668117046356,
+      "gcn": 55.75000286102295,
+      "graphsage": 54.29166913032532,
+      "gat": 58.12500238418579,
+      "gps": 56.833335161209106,
+      "aria": 47.29166924953461,
+      "aria_phg": 55.41666924953461,
+      "aria_moe": 57.0000022649765,
+      "aria_ensemble": 59.041669964790344
+    },
+    "brazil-airports": {
+      "mlp": 24.642858058214188,
+      "gcn": 46.42857402563095,
+      "graphsage": 38.21428805589676,
+      "gat": 33.21428716182709,
+      "gps": 52.85714507102966,
+      "aria": 39.2857164144516,
+      "aria_phg": 39.285716116428375,
+      "aria_moe": 52.50000178813934,
+      "aria_ensemble": 50.35714477300644
+    },
+    "europe-airports": {
+      "mlp": 23.08642014861107,
+      "gcn": 47.65432149171829,
+      "graphsage": 45.55555582046509,
+      "gat": 46.66666775941849,
+      "gps": 54.56790268421173,
+      "aria": 46.29629611968994,
+      "aria_phg": 45.43209910392761,
+      "aria_moe": 46.17284059524536,
+      "aria_ensemble": 49.135803282260895
+    }
+  },
+  "std_acc": {
+    "cora": {
+      "mlp": 2.3308793968373527,
+      "gcn": 0.9307881261574776,
+      "graphsage": 0.6700538715256321,
+      "gat": 1.5291762351989746,
+      "gps": 1.5880075005279661,
+      "aria": 2.270078363995701,
+      "aria_phg": 0.9556821962169146,
+      "aria_moe": 1.999558745768897,
+      "aria_ensemble": 1.8113128456652614
+    },
+    "citeseer": {
+      "mlp": 1.9133647345366631,
+      "gcn": 1.5289428267603569,
+      "graphsage": 1.1787923217540202,
+      "gat": 1.2197621582876155,
+      "gps": 1.6021465885646442,
+      "aria": 1.4779069249138137,
+      "aria_phg": 1.806110026315398,
+      "aria_moe": 2.253605351523612,
+      "aria_ensemble": 1.7048738907882814
+    },
+    "pubmed": {
+      "mlp": 0.33960566292983263,
+      "gcn": 0.439921063801283,
+      "graphsage": 0.4216553309380669,
+      "gat": 0.3827595900628381,
+      "gps": 0.33961535539160165,
+      "aria": 6.831449447912482,
+      "aria_phg": 0.5335936036031261,
+      "aria_moe": 6.122731443671609,
+      "aria_ensemble": 0.7879194550030684
+    },
+    "texas": {
+      "mlp": 4.324323758483122,
+      "gcn": 4.689013548639204,
+      "graphsage": 5.1351342703168985,
+      "gat": 4.954135795039825,
+      "gps": 7.396720459963523,
+      "aria": 5.330563552578939,
+      "aria_phg": 4.221756888897742,
+      "aria_moe": 2.702703475952477,
+      "aria_ensemble": 4.151969674130444
+    },
+    "wisconsin": {
+      "mlp": 3.8473364119256863,
+      "gcn": 5.116858591233877,
+      "graphsage": 6.446776958006281,
+      "gat": 4.786884977904565,
+      "gps": 4.822891428709269,
+      "aria": 3.926467294297785,
+      "aria_phg": 3.7409378217950526,
+      "aria_moe": 6.3354876307690215,
+      "aria_ensemble": 4.131628676423074
+    },
+    "cornell": {
+      "mlp": 4.151970139722551,
+      "gcn": 5.726924229064188,
+      "graphsage": 4.195724037534737,
+      "gat": 6.1690341283969845,
+      "gps": 6.5089706178489015,
+      "aria": 4.1957238071664005,
+      "aria_phg": 2.7562274591521696,
+      "aria_moe": 5.9765794520006255,
+      "aria_ensemble": 3.197881072757505
+    },
+    "amazon-photo": {
+      "mlp": 0.6334236669373234,
+      "gcn": 0.7490206080711432,
+      "graphsage": 0.5925664488673908,
+      "gat": 0.4367781781029864,
+      "gps": 0.367418770306736,
+      "aria": 1.579920089119488,
+      "aria_phg": 0.4478499097417369,
+      "aria_moe": 1.0204429644771411,
+      "aria_ensemble": 0.9387214983351702
+    },
+    "actor": {
+      "mlp": 0.8602087424744091,
+      "gcn": 0.9478252959083614,
+      "graphsage": 0.6123728954711403,
+      "gat": 1.1319807853428523,
+      "gps": 0.9321695613108869,
+      "aria": 1.1653467128087536,
+      "aria_phg": 1.6043596761867118,
+      "aria_moe": 1.319337355092572,
+      "aria_ensemble": 1.1561176378047326
+    },
+    "usa-airports": {
+      "mlp": 1.4000248853332258,
+      "gcn": 2.56038187974404,
+      "graphsage": 2.024587817295192,
+      "gat": 3.432128939053905,
+      "gps": 4.217194061475585,
+      "aria": 3.4573301484231007,
+      "aria_phg": 2.2047930220526935,
+      "aria_moe": 2.6796559046798025,
+      "aria_ensemble": 3.4563247988549564
+    },
+    "brazil-airports": {
+      "mlp": 4.642857393393225,
+      "gcn": 5.297284518824337,
+      "graphsage": 6.595066863216154,
+      "gat": 9.319992099990092,
+      "gps": 6.546537227351946,
+      "aria": 5.050762421712223,
+      "aria_phg": 12.777532037799087,
+      "aria_moe": 5.309311544193364,
+      "aria_ensemble": 7.734431573460152
+    },
+    "europe-airports": {
+      "mlp": 2.5925927147979677,
+      "gcn": 4.5928579734154,
+      "graphsage": 5.450305786461374,
+      "gat": 4.37532032645255,
+      "gps": 3.3945007893704213,
+      "aria": 3.9909206062944227,
+      "aria_phg": 3.6954639141109835,
+      "aria_moe": 5.499026505252936,
+      "aria_ensemble": 5.318681662673677
+    }
+  },
+  "n_runs": {
+    "cora": {
+      "mlp": 10,
+      "gcn": 10,
+      "graphsage": 10,
+      "gat": 10,
+      "gps": 10,
+      "aria": 10,
+      "aria_phg": 10,
+      "aria_moe": 10,
+      "aria_ensemble": 10
+    },
+    "citeseer": {
+      "mlp": 10,
+      "gcn": 10,
+      "graphsage": 10,
+      "gat": 10,
+      "gps": 10,
+      "aria": 10,
+      "aria_phg": 10,
+      "aria_moe": 10,
+      "aria_ensemble": 10
+    },
+    "pubmed": {
+      "mlp": 10,
+      "gcn": 10,
+      "graphsage": 10,
+      "gat": 10,
+      "gps": 10,
+      "aria": 10,
+      "aria_phg": 10,
+      "aria_moe": 10,
+      "aria_ensemble": 10
+    },
+    "texas": {
+      "mlp": 10,
+      "gcn": 10,
+      "graphsage": 10,
+      "gat": 10,
+      "gps": 10,
+      "aria": 10,
+      "aria_phg": 10,
+      "aria_moe": 10,
+      "aria_ensemble": 10
+    },
+    "wisconsin": {
+      "mlp": 10,
+      "gcn": 10,
+      "graphsage": 10,
+      "gat": 10,
+      "gps": 10,
+      "aria": 10,
+      "aria_phg": 10,
+      "aria_moe": 10,
+      "aria_ensemble": 10
+    },
+    "cornell": {
+      "mlp": 10,
+      "gcn": 10,
+      "graphsage": 10,
+      "gat": 10,
+      "gps": 10,
+      "aria": 10,
+      "aria_phg": 10,
+      "aria_moe": 10,
+      "aria_ensemble": 10
+    },
+    "amazon-photo": {
+      "mlp": 10,
+      "gcn": 10,
+      "graphsage": 10,
+      "gat": 10,
+      "gps": 10,
+      "aria": 10,
+      "aria_phg": 10,
+      "aria_moe": 10,
+      "aria_ensemble": 10
+    },
+    "actor": {
+      "mlp": 10,
+      "gcn": 10,
+      "graphsage": 10,
+      "gat": 10,
+      "gps": 10,
+      "aria": 10,
+      "aria_phg": 10,
+      "aria_moe": 10,
+      "aria_ensemble": 10
+    },
+    "usa-airports": {
+      "mlp": 10,
+      "gcn": 10,
+      "graphsage": 10,
+      "gat": 10,
+      "gps": 10,
+      "aria": 10,
+      "aria_phg": 10,
+      "aria_moe": 10,
+      "aria_ensemble": 10
+    },
+    "brazil-airports": {
+      "mlp": 10,
+      "gcn": 10,
+      "graphsage": 10,
+      "gat": 10,
+      "gps": 10,
+      "aria": 10,
+      "aria_phg": 10,
+      "aria_moe": 10,
+      "aria_ensemble": 10
+    },
+    "europe-airports": {
+      "mlp": 10,
+      "gcn": 10,
+      "graphsage": 10,
+      "gat": 10,
+      "gps": 10,
+      "aria": 10,
+      "aria_phg": 10,
+      "aria_moe": 10,
+      "aria_ensemble": 10
+    }
+  },
+  "best_model_per_dataset": {
+    "cora": "graphsage",
+    "citeseer": "aria_ensemble",
+    "pubmed": "graphsage",
+    "texas": "aria_moe",
+    "wisconsin": "mlp",
+    "cornell": "mlp",
+    "amazon-photo": "graphsage",
+    "actor": "mlp",
+    "usa-airports": "aria_ensemble",
+    "brazil-airports": "gps",
+    "europe-airports": "gps"
+  },
+  "overall_mean_acc": {
+    "mlp": 62.01275519349358,
+    "gcn": 61.48467819799077,
+    "graphsage": 67.82136543230577,
+    "gat": 60.552536709742114,
+    "gps": 67.995811809193,
+    "aria": 65.64518741585992,
+    "aria_phg": 68.2205325906927,
+    "aria_moe": 67.85256767814809,
+    "aria_ensemble": 70.06841916929592
+  },
+  "ranks": {
+    "cora": {
+      "graphsage": 1,
+      "gcn": 2,
+      "gat": 3,
+      "aria_ensemble": 4,
+      "aria_phg": 5,
+      "gps": 6,
+      "aria_moe": 7,
+      "aria": 8,
+      "mlp": 9
+    },
+    "citeseer": {
+      "aria_ensemble": 1,
+      "aria_phg": 2,
+      "gcn": 3,
+      "graphsage": 4,
+      "gps": 5,
+      "aria": 6,
+      "gat": 7,
+      "aria_moe": 8,
+      "mlp": 9
+    },
+    "pubmed": {
+      "graphsage": 1,
+      "gps": 2,
+      "mlp": 3,
+      "gcn": 4,
+      "aria_phg": 5,
+      "gat": 6,
+      "aria_ensemble": 7,
+      "aria_moe": 8,
+      "aria": 9
+    },
+    "texas": {
+      "aria_moe": 1,
+      "aria": 2,
+      "mlp": 3,
+      "aria_ensemble": 4,
+      "graphsage": 5,
+      "aria_phg": 6,
+      "gps": 7,
+      "gcn": 8,
+      "gat": 9
+    },
+    "wisconsin": {
+      "mlp": 1,
+      "aria": 2,
+      "aria_moe": 3,
+      "aria_ensemble": 4,
+      "aria_phg": 5,
+      "graphsage": 6,
+      "gps": 7,
+      "gat": 8,
+      "gcn": 9
+    },
+    "cornell": {
+      "mlp": 1,
+      "aria": 2,
+      "aria_ensemble": 3,
+      "aria_moe": 4,
+      "aria_phg": 5,
+      "graphsage": 6,
+      "gps": 7,
+      "gat": 8,
+      "gcn": 9
+    },
+    "amazon-photo": {
+      "graphsage": 1,
+      "aria_phg": 2,
+      "gps": 3,
+      "gat": 4,
+      "gcn": 5,
+      "aria_ensemble": 6,
+      "mlp": 7,
+      "aria": 8,
+      "aria_moe": 9
+    },
+    "actor": {
+      "mlp": 1,
+      "gps": 2,
+      "aria_phg": 3,
+      "aria_ensemble": 4,
+      "graphsage": 5,
+      "aria_moe": 6,
+      "aria": 7,
+      "gcn": 8,
+      "gat": 9
+    },
+    "usa-airports": {
+      "aria_ensemble": 1,
+      "gat": 2,
+      "aria_moe": 3,
+      "gps": 4,
+      "gcn": 5,
+      "aria_phg": 6,
+      "graphsage": 7,
+      "aria": 8,
+      "mlp": 9
+    },
+    "brazil-airports": {
+      "gps": 1,
+      "aria_moe": 2,
+      "aria_ensemble": 3,
+      "gcn": 4,
+      "aria": 5,
+      "aria_phg": 6,
+      "graphsage": 7,
+      "gat": 8,
+      "mlp": 9
+    },
+    "europe-airports": {
+      "gps": 1,
+      "aria_ensemble": 2,
+      "gcn": 3,
+      "gat": 4,
+      "aria": 5,
+      "aria_moe": 6,
+      "graphsage": 7,
+      "aria_phg": 8,
+      "mlp": 9
+    }
+  },
+  "mean_rank": {
+    "mlp": 5.545454545454546,
+    "gcn": 5.454545454545454,
+    "graphsage": 4.545454545454546,
+    "gat": 6.181818181818182,
+    "gps": 4.090909090909091,
+    "aria": 5.636363636363637,
+    "aria_phg": 4.818181818181818,
+    "aria_moe": 5.181818181818182,
+    "aria_ensemble": 3.5454545454545454
+  },
+  "never_worst": {
+    "mlp": false,
+    "gcn": false,
+    "graphsage": true,
+    "gat": false,
+    "gps": true,
+    "aria": false,
+    "aria_phg": true,
+    "aria_moe": false,
+    "aria_ensemble": true
+  },
+  "worst_count": {
+    "mlp": 5,
+    "gcn": 2,
+    "graphsage": 0,
+    "gat": 2,
+    "gps": 0,
+    "aria": 1,
+    "aria_phg": 0,
+    "aria_moe": 1,
+    "aria_ensemble": 0
+  },
+  "significance": {
+    "cora": {
+      "best_baseline": "graphsage",
+      "best_baseline_acc": 87.142853140831,
+      "aria": {
+        "p_vs_best_baseline": 3.141241010062543e-05,
+        "t_vs_best_baseline": -7.655364516886491,
+        "p_vs_gps": 0.0012110891576677003,
+        "t_vs_gps": -4.64474785526185,
+        "margin_vs_best_baseline": -5.633801817893982,
+        "margin_vs_gps": -3.82293701171875
+      },
+      "aria_phg": {
+        "p_vs_best_baseline": 0.18929495717675812,
+        "t_vs_best_baseline": -1.4200416981189115,
+        "p_vs_gps": 0.022654229598826053,
+        "t_vs_gps": 2.745194090383752,
+        "margin_vs_best_baseline": -0.4627770185470581,
+        "margin_vs_gps": 1.3480877876281738
+      },
+      "aria_moe": {
+        "p_vs_best_baseline": 4.122373659553664e-05,
+        "t_vs_best_baseline": -7.395650480385783,
+        "p_vs_gps": 9.345537762339807e-05,
+        "t_vs_gps": -6.652642734169322,
+        "margin_vs_best_baseline": -4.60764467716217,
+        "margin_vs_gps": -2.7967798709869385
+      },
+      "aria_ensemble": {
+        "p_vs_best_baseline": 0.5927823678128644,
+        "t_vs_best_baseline": -0.5544454058208559,
+        "p_vs_gps": 0.005576436425022894,
+        "t_vs_gps": 3.6194610879321085,
+        "margin_vs_best_baseline": -0.34205198287963867,
+        "margin_vs_gps": 1.4688128232955933
+      },
+      "best_family_model": "aria_ensemble",
+      "best_family_acc": 86.80080115795135
+    },
+    "citeseer": {
+      "best_baseline": "gcn",
+      "best_baseline_acc": 75.89445769786835,
+      "aria": {
+        "p_vs_best_baseline": 0.47645389727010756,
+        "t_vs_best_baseline": -0.7429539907147217,
+        "p_vs_gps": 0.6601170345014844,
+        "t_vs_gps": -0.4546665368236588,
+        "margin_vs_best_baseline": -0.32608091831207275,
+        "margin_vs_gps": -0.22720932960510254
+      },
+      "aria_phg": {
+        "p_vs_best_baseline": 0.33921867348613577,
+        "t_vs_best_baseline": 1.0092464687729836,
+        "p_vs_gps": 0.48863497270798517,
+        "t_vs_gps": 0.7219876258998718,
+        "margin_vs_best_baseline": 0.25730907917022705,
+        "margin_vs_gps": 0.35618066787719727
+      },
+      "aria_moe": {
+        "p_vs_best_baseline": 0.17487967446111372,
+        "t_vs_best_baseline": -1.4728549992266533,
+        "p_vs_gps": 0.3011495879710794,
+        "t_vs_gps": -1.0969379215179247,
+        "margin_vs_best_baseline": -0.7185953855514526,
+        "margin_vs_gps": -0.6197237968444824
+      },
+      "aria_ensemble": {
+        "p_vs_best_baseline": 0.03318266043613153,
+        "t_vs_best_baseline": 2.512348157798541,
+        "p_vs_gps": 0.07899083477188282,
+        "t_vs_gps": 1.9805405650961085,
+        "margin_vs_best_baseline": 0.8514648675918579,
+        "margin_vs_gps": 0.9503364562988281
+      },
+      "best_family_model": "aria_ensemble",
+      "best_family_acc": 76.7459225654602
+    },
+    "pubmed": {
+      "best_baseline": "graphsage",
+      "best_baseline_acc": 89.34583902359009,
+      "aria": {
+        "p_vs_best_baseline": 1.3022982280738152e-05,
+        "t_vs_best_baseline": -8.545176983049169,
+        "p_vs_gps": 1.2717287150645171e-05,
+        "t_vs_gps": -8.570263130028735,
+        "margin_vs_best_baseline": -19.29006040096283,
+        "margin_vs_gps": -19.125254154205322
+      },
+      "aria_phg": {
+        "p_vs_best_baseline": 4.373459216791277e-08,
+        "t_vs_best_baseline": -16.722690408331715,
+        "p_vs_gps": 6.389554238173884e-07,
+        "t_vs_gps": -12.265376042908898,
+        "margin_vs_best_baseline": -1.8686598539352417,
+        "margin_vs_gps": -1.7038536071777344
+      },
+      "aria_moe": {
+        "p_vs_best_baseline": 1.0875964849278188e-05,
+        "t_vs_best_baseline": -8.736929964434434,
+        "p_vs_gps": 9.980467627775567e-06,
+        "t_vs_gps": -8.829601093654917,
+        "margin_vs_best_baseline": -17.882859110832214,
+        "margin_vs_gps": -17.718052864074707
+      },
+      "aria_ensemble": {
+        "p_vs_best_baseline": 4.063437172344233e-07,
+        "t_vs_best_baseline": -12.931385996630677,
+        "p_vs_gps": 1.5220913032059078e-07,
+        "t_vs_gps": -14.49085766142443,
+        "margin_vs_best_baseline": -4.0035480260849,
+        "margin_vs_gps": -3.8387417793273926
+      },
+      "best_family_model": "aria_phg",
+      "best_family_acc": 87.47717916965485
+    },
+    "texas": {
+      "best_baseline": "mlp",
+      "best_baseline_acc": 80.54054141044617,
+      "aria": {
+        "p_vs_best_baseline": 0.8928732173592222,
+        "t_vs_best_baseline": 0.1385279627463218,
+        "p_vs_gps": 0.00040130912757530837,
+        "t_vs_gps": 5.458305654336918,
+        "margin_vs_best_baseline": 0.270271897315979,
+        "margin_vs_gps": 12.972973585128784
+      },
+      "aria_phg": {
+        "p_vs_best_baseline": 0.05840338389458597,
+        "t_vs_best_baseline": -2.166944403222664,
+        "p_vs_gps": 0.004571494188422212,
+        "t_vs_gps": 3.747610643640291,
+        "margin_vs_best_baseline": -3.2432419061660767,
+        "margin_vs_gps": 9.459459781646729
+      },
+      "aria_moe": {
+        "p_vs_best_baseline": 0.7577399715697545,
+        "t_vs_best_baseline": 0.31799950189927656,
+        "p_vs_gps": 0.0009431493732220315,
+        "t_vs_gps": 4.822912930831879,
+        "margin_vs_best_baseline": 0.5405408143997192,
+        "margin_vs_gps": 13.243242502212524
+      },
+      "aria_ensemble": {
+        "p_vs_best_baseline": 0.4753647870802211,
+        "t_vs_best_baseline": -0.744845224734768,
+        "p_vs_gps": 0.007556703189918027,
+        "t_vs_gps": 3.4259312315989847,
+        "margin_vs_best_baseline": -1.6216212511062622,
+        "margin_vs_gps": 11.081080436706543
+      },
+      "best_family_model": "aria_moe",
+      "best_family_acc": 81.08108222484589
+    },
+    "wisconsin": {
+      "best_baseline": "mlp",
+      "best_baseline_acc": 85.29411852359772,
+      "aria": {
+        "p_vs_best_baseline": 0.335339824945319,
+        "t_vs_best_baseline": -1.017826715615965,
+        "p_vs_gps": 5.364926946380173e-05,
+        "t_vs_gps": 7.150248276820048,
+        "margin_vs_best_baseline": -1.5686273574829102,
+        "margin_vs_gps": 10.196077823638916
+      },
+      "aria_phg": {
+        "p_vs_best_baseline": 0.0033916702267946016,
+        "t_vs_best_baseline": -3.9427724440366254,
+        "p_vs_gps": 3.3580404436581206e-06,
+        "t_vs_gps": 10.076552622384199,
+        "margin_vs_best_baseline": -3.7254899740219116,
+        "margin_vs_gps": 8.039215207099915
+      },
+      "aria_moe": {
+        "p_vs_best_baseline": 0.1589187502814889,
+        "t_vs_best_baseline": -1.5359763347691506,
+        "p_vs_gps": 8.538051223166285e-06,
+        "t_vs_gps": 9.0,
+        "margin_vs_best_baseline": -1.764705777168274,
+        "margin_vs_gps": 9.999999403953552
+      },
+      "aria_ensemble": {
+        "p_vs_best_baseline": 0.09320637160539952,
+        "t_vs_best_baseline": -1.8773044091622952,
+        "p_vs_gps": 6.433965876715679e-06,
+        "t_vs_gps": 9.315746482709825,
+        "margin_vs_best_baseline": -2.1568626165390015,
+        "margin_vs_gps": 9.607842564582825
+      },
+      "best_family_model": "aria",
+      "best_family_acc": 83.72549116611481
+    },
+    "cornell": {
+      "best_baseline": "mlp",
+      "best_baseline_acc": 77.83783912658691,
+      "aria": {
+        "p_vs_best_baseline": 0.04750874195525991,
+        "t_vs_best_baseline": -2.293411862254859,
+        "p_vs_gps": 0.005710293135963558,
+        "t_vs_gps": 3.6042515649544162,
+        "margin_vs_best_baseline": -4.054053425788879,
+        "margin_vs_gps": 11.62162184715271
+      },
+      "aria_phg": {
+        "p_vs_best_baseline": 0.007664614937588037,
+        "t_vs_best_baseline": -3.4169679785259777,
+        "p_vs_gps": 0.0024831954822601846,
+        "t_vs_gps": 4.150321407155726,
+        "margin_vs_best_baseline": -6.486485600471497,
+        "margin_vs_gps": 9.189189672470093
+      },
+      "aria_moe": {
+        "p_vs_best_baseline": 0.07605911042842077,
+        "t_vs_best_baseline": -2.0040125311405412,
+        "p_vs_gps": 0.01237926148601033,
+        "t_vs_gps": 3.1169541743965183,
+        "margin_vs_best_baseline": -5.135133266448975,
+        "margin_vs_gps": 10.540542006492615
+      },
+      "aria_ensemble": {
+        "p_vs_best_baseline": 0.016328274950011473,
+        "t_vs_best_baseline": -2.9459414537320012,
+        "p_vs_gps": 0.005587966714143346,
+        "t_vs_gps": 3.6181359354495464,
+        "margin_vs_best_baseline": -4.864864349365234,
+        "margin_vs_gps": 10.810810923576355
+      },
+      "best_family_model": "aria",
+      "best_family_acc": 73.78378570079803
+    },
+    "amazon-photo": {
+      "best_baseline": "graphsage",
+      "best_baseline_acc": 95.49378395080566,
+      "aria": {
+        "p_vs_best_baseline": 6.883193496389833e-06,
+        "t_vs_best_baseline": -9.239611638084483,
+        "p_vs_gps": 4.03251072184335e-06,
+        "t_vs_gps": -9.857282551445111,
+        "margin_vs_best_baseline": -5.552650094032288,
+        "margin_vs_gps": -5.232177376747131
+      },
+      "aria_phg": {
+        "p_vs_best_baseline": 0.2948516290621659,
+        "t_vs_best_baseline": -1.1122618138767186,
+        "p_vs_gps": 0.7451663272847697,
+        "t_vs_gps": 0.3351844822421106,
+        "margin_vs_best_baseline": -0.2616095542907715,
+        "margin_vs_gps": 0.058863162994384766
+      },
+      "aria_moe": {
+        "p_vs_best_baseline": 1.5978638097057644e-07,
+        "t_vs_best_baseline": -14.409808003301269,
+        "p_vs_gps": 3.629458377647183e-08,
+        "t_vs_gps": -17.082892168847906,
+        "margin_vs_best_baseline": -5.670374035835266,
+        "margin_vs_gps": -5.34990131855011
+      },
+      "aria_ensemble": {
+        "p_vs_best_baseline": 0.0005483513655013735,
+        "t_vs_best_baseline": -5.221157117879399,
+        "p_vs_gps": 0.0009186289427813659,
+        "t_vs_gps": -4.841875947446662,
+        "margin_vs_best_baseline": -1.6873788833618164,
+        "margin_vs_gps": -1.3669061660766602
+      },
+      "best_family_model": "aria_phg",
+      "best_family_acc": 95.23217439651489
+    },
+    "actor": {
+      "best_baseline": "mlp",
+      "best_baseline_acc": 35.97368597984314,
+      "aria": {
+        "p_vs_best_baseline": 0.00023730053919793537,
+        "t_vs_best_baseline": -5.871571122828907,
+        "p_vs_gps": 0.0413118699885018,
+        "t_vs_gps": -2.378755573627142,
+        "margin_vs_best_baseline": -2.14473694562912,
+        "margin_vs_gps": -0.8552625775337219
+      },
+      "aria_phg": {
+        "p_vs_best_baseline": 0.011348547087359604,
+        "t_vs_best_baseline": -3.1709548443253257,
+        "p_vs_gps": 0.6929114193816234,
+        "t_vs_gps": -0.40785555574231397,
+        "margin_vs_best_baseline": -1.4407899975776672,
+        "margin_vs_gps": -0.1513156294822693
+      },
+      "aria_moe": {
+        "p_vs_best_baseline": 0.008128627130251954,
+        "t_vs_best_baseline": -3.3798719683752805,
+        "p_vs_gps": 0.5135181885222695,
+        "t_vs_gps": -0.6801583052095779,
+        "margin_vs_best_baseline": -1.5789476037025452,
+        "margin_vs_gps": -0.2894732356071472
+      },
+      "aria_ensemble": {
+        "p_vs_best_baseline": 0.0018034225156005194,
+        "t_vs_best_baseline": -4.367584704394394,
+        "p_vs_gps": 0.616953715550645,
+        "t_vs_gps": -0.5179947451897506,
+        "margin_vs_best_baseline": -1.4802637696266174,
+        "margin_vs_gps": -0.19078940153121948
+      },
+      "best_family_model": "aria_phg",
+      "best_family_acc": 34.53289598226547
+    },
+    "usa-airports": {
+      "best_baseline": "gat",
+      "best_baseline_acc": 58.12500238418579,
+      "aria": {
+        "p_vs_best_baseline": 3.818999296758901e-06,
+        "t_vs_best_baseline": -9.922026653609635,
+        "p_vs_gps": 0.0005325948495431013,
+        "t_vs_gps": -5.243051754727551,
+        "margin_vs_best_baseline": -10.833333134651184,
+        "margin_vs_gps": -9.5416659116745
+      },
+      "aria_phg": {
+        "p_vs_best_baseline": 0.064893718052507,
+        "t_vs_best_baseline": -2.102128605096343,
+        "p_vs_gps": 0.41397171315988446,
+        "t_vs_gps": -0.8564471012839148,
+        "margin_vs_best_baseline": -2.708333134651184,
+        "margin_vs_gps": -1.4166659116744995
+      },
+      "aria_moe": {
+        "p_vs_best_baseline": 0.4792184721463326,
+        "t_vs_best_baseline": -0.7381657634934491,
+        "p_vs_gps": 0.9200763821640325,
+        "t_vs_gps": 0.10318812238461454,
+        "margin_vs_best_baseline": -1.1250001192092896,
+        "margin_vs_gps": 0.16666710376739502
+      },
+      "aria_ensemble": {
+        "p_vs_best_baseline": 0.6053472629578414,
+        "t_vs_best_baseline": 0.5354017457842194,
+        "p_vs_gps": 0.20191570699906816,
+        "t_vs_gps": 1.3765852982379128,
+        "margin_vs_best_baseline": 0.9166675806045532,
+        "margin_vs_gps": 2.208334803581238
+      },
+      "best_family_model": "aria_ensemble",
+      "best_family_acc": 59.041669964790344
+    },
+    "brazil-airports": {
+      "best_baseline": "gps",
+      "best_baseline_acc": 52.85714507102966,
+      "aria": {
+        "p_vs_best_baseline": 0.0038961561639076474,
+        "t_vs_best_baseline": -3.8517032152266704,
+        "p_vs_gps": 0.0038961561639076474,
+        "t_vs_gps": -3.8517032152266704,
+        "margin_vs_best_baseline": -13.571428656578064,
+        "margin_vs_gps": -13.571428656578064
+      },
+      "aria_phg": {
+        "p_vs_best_baseline": 0.008483789454135372,
+        "t_vs_best_baseline": -3.352941040167236,
+        "p_vs_gps": 0.008483789454135372,
+        "t_vs_gps": -3.352941040167236,
+        "margin_vs_best_baseline": -13.571428954601288,
+        "margin_vs_gps": -13.571428954601288
+      },
+      "aria_moe": {
+        "p_vs_best_baseline": 0.8880277481113112,
+        "t_vs_best_baseline": -0.14484151701338346,
+        "p_vs_gps": 0.8880277481113112,
+        "t_vs_gps": -0.14484151701338346,
+        "margin_vs_best_baseline": -0.3571432828903198,
+        "margin_vs_gps": -0.3571432828903198
+      },
+      "aria_ensemble": {
+        "p_vs_best_baseline": 0.428300322862436,
+        "t_vs_best_baseline": -0.8294501770868254,
+        "p_vs_gps": 0.428300322862436,
+        "t_vs_gps": -0.8294501770868254,
+        "margin_vs_best_baseline": -2.500000298023224,
+        "margin_vs_gps": -2.500000298023224
+      },
+      "best_family_model": "aria_moe",
+      "best_family_acc": 52.50000178813934
+    },
+    "europe-airports": {
+      "best_baseline": "gps",
+      "best_baseline_acc": 54.56790268421173,
+      "aria": {
+        "p_vs_best_baseline": 0.0006562443311315288,
+        "t_vs_best_baseline": -5.087386240466914,
+        "p_vs_gps": 0.0006562443311315288,
+        "t_vs_gps": -5.087386240466914,
+        "margin_vs_best_baseline": -8.27160656452179,
+        "margin_vs_gps": -8.27160656452179
+      },
+      "aria_phg": {
+        "p_vs_best_baseline": 0.0004097936682326077,
+        "t_vs_best_baseline": -5.4422228503736605,
+        "p_vs_gps": 0.0004097936682326077,
+        "t_vs_gps": -5.4422228503736605,
+        "margin_vs_best_baseline": -9.135803580284119,
+        "margin_vs_gps": -9.135803580284119
+      },
+      "aria_moe": {
+        "p_vs_best_baseline": 0.0006396138182149054,
+        "t_vs_best_baseline": -5.106386873586942,
+        "p_vs_gps": 0.0006396138182149054,
+        "t_vs_gps": -5.106386873586942,
+        "margin_vs_best_baseline": -8.39506208896637,
+        "margin_vs_gps": -8.39506208896637
+      },
+      "aria_ensemble": {
+        "p_vs_best_baseline": 0.0041904034555751086,
+        "t_vs_best_baseline": -3.804177273421924,
+        "p_vs_gps": 0.0041904034555751086,
+        "t_vs_gps": -3.804177273421924,
+        "margin_vs_best_baseline": -5.432099401950836,
+        "margin_vs_gps": -5.432099401950836
+      },
+      "best_family_model": "aria_ensemble",
+      "best_family_acc": 49.135803282260895
+    }
+  },
+  "mean_time_sec": {
+    "mlp": 0.19610558856617322,
+    "gcn": 0.5204995437101885,
+    "graphsage": 0.5068329529328781,
+    "gat": 0.8488307887857609,
+    "gps": 9.412638326124712,
+    "aria": 0.6741341829299927,
+    "aria_phg": 2.2372533386403863,
+    "aria_moe": 1.153978896141052,
+    "aria_ensemble": 4.417256892811169
+  },
+  "time_by_dataset": {
+    "cora": {
+      "mlp": 0.147361159324646,
+      "gcn": 0.20462138652801515,
+      "graphsage": 0.17734217643737793,
+      "gat": 0.4687342166900635,
+      "gps": 1.5486699342727661,
+      "aria": 0.7114397525787354,
+      "aria_phg": 1.0538495302200317,
+      "aria_moe": 0.9080986738204956,
+      "aria_ensemble": 3.2927685976028442
+    },
+    "citeseer": {
+      "mlp": 0.13965742588043212,
+      "gcn": 0.17730274200439453,
+      "graphsage": 0.2769221305847168,
+      "gat": 0.46245617866516114,
+      "gps": 1.348059630393982,
+      "aria": 0.535324239730835,
+      "aria_phg": 1.1497441530227661,
+      "aria_moe": 1.048914623260498,
+      "aria_ensemble": 2.4010427236557006
+    },
+    "pubmed": {
+      "mlp": 0.3818732500076294,
+      "gcn": 0.8569515466690063,
+      "graphsage": 0.7937127828598023,
+      "gat": 1.482281994819641,
+      "gps": 64.88463249206544,
+      "aria": 0.41157004833221433,
+      "aria_phg": 5.6042952060699465,
+      "aria_moe": 1.4149080514907837,
+      "aria_ensemble": 8.969964385032654
+    },
+    "texas": {
+      "mlp": 0.24904437065124513,
+      "gcn": 0.28514714241027833,
+      "graphsage": 0.4713202953338623,
+      "gat": 0.6728456974029541,
+      "gps": 1.408667755126953,
+      "aria": 0.5570483684539795,
+      "aria_phg": 0.9672281980514527,
+      "aria_moe": 1.1469496965408326,
+      "aria_ensemble": 3.338415193557739
+    },
+    "wisconsin": {
+      "mlp": 0.17598860263824462,
+      "gcn": 0.3933780431747437,
+      "graphsage": 0.3864800453186035,
+      "gat": 0.8388020992279053,
+      "gps": 1.1920205116271974,
+      "aria": 0.5446079492568969,
+      "aria_phg": 1.2643216609954835,
+      "aria_moe": 0.8586090087890625,
+      "aria_ensemble": 3.0841639280319213
+    },
+    "cornell": {
+      "mlp": 0.23111870288848876,
+      "gcn": 0.39205667972564695,
+      "graphsage": 0.4916389465332031,
+      "gat": 0.5526401996612549,
+      "gps": 1.8341267824172973,
+      "aria": 0.7716490745544433,
+      "aria_phg": 1.009592866897583,
+      "aria_moe": 1.02917582988739,
+      "aria_ensemble": 2.447760224342346
+    },
+    "amazon-photo": {
+      "mlp": 0.2210392713546753,
+      "gcn": 0.9899283409118652,
+      "graphsage": 1.386911940574646,
+      "gat": 2.665064215660095,
+      "gps": 21.120622873306274,
+      "aria": 1.9834545850753784,
+      "aria_phg": 8.430065274238586,
+      "aria_moe": 2.555365538597107,
+      "aria_ensemble": 13.46275074481964
+    },
+    "actor": {
+      "mlp": 0.17190175056457518,
+      "gcn": 0.27582952976226804,
+      "graphsage": 0.5950973033905029,
+      "gat": 0.4199601888656616,
+      "gps": 6.193711686134338,
+      "aria": 0.38774187564849855,
+      "aria_phg": 2.6053958415985106,
+      "aria_moe": 0.6848853349685669,
+      "aria_ensemble": 3.4065556287765504
+    },
+    "usa-airports": {
+      "mlp": 0.11720192432403564,
+      "gcn": 0.4287175893783569,
+      "graphsage": 0.2471827507019043,
+      "gat": 0.4068176507949829,
+      "gps": 1.3866208791732788,
+      "aria": 0.3282255411148071,
+      "aria_phg": 0.852522873878479,
+      "aria_moe": 0.9261528968811035,
+      "aria_ensemble": 2.4025615215301515
+    },
+    "brazil-airports": {
+      "mlp": 0.1488971471786499,
+      "gcn": 0.7398876428604126,
+      "graphsage": 0.33996920585632323,
+      "gat": 0.5511075973510742,
+      "gps": 1.1749638795852662,
+      "aria": 0.4719685554504395,
+      "aria_phg": 1.0032380104064942,
+      "aria_moe": 0.9888803005218506,
+      "aria_ensemble": 3.1172181367874146
+    },
+    "europe-airports": {
+      "mlp": 0.1730778694152832,
+      "gcn": 0.981674337387085,
+      "graphsage": 0.40858490467071534,
+      "gat": 0.8164286375045776,
+      "gps": 1.446925163269043,
+      "aria": 0.7124460220336915,
+      "aria_phg": 0.669533109664917,
+      "aria_moe": 1.1318279027938842,
+      "aria_ensemble": 2.666624736785889
+    }
+  }
+}

@@ -1,0 +1,584 @@
+{
+  "cora": {
+    "aria_ensemble2": {
+      "mean": 85.91549336910248,
+      "std": 1.8896352958333325,
+      "runs": [
+        84.10462737083435,
+        86.3179087638855,
+        89.33601379394531,
+        85.71428656578064,
+        86.51911616325378,
+        84.30583477020264,
+        82.49496817588806,
+        85.91549396514893,
+        86.11670136451721,
+        88.32998275756836
+      ],
+      "member_configs": {
+        "aria": {
+          "hidden_dim": 64,
+          "lr": 0.005,
+          "weight_decay": 0.0005,
+          "dropout": 0.3,
+          "num_layers": 3,
+          "rank": 32,
+          "max_epochs": 300,
+          "patience": 50
+        },
+        "aria_phg": {
+          "hidden_dim": 64,
+          "lr": 0.005,
+          "weight_decay": 5e-05,
+          "dropout": 0.5,
+          "num_layers": 3,
+          "rank": 8,
+          "aux_lambda": 0.5,
+          "pe_k": 16,
+          "max_epochs": 300,
+          "patience": 50
+        },
+        "aria_moe": {
+          "hidden_dim": 64,
+          "lr": 0.005,
+          "weight_decay": 0.0005,
+          "dropout": 0.5,
+          "num_layers": 3,
+          "rank": 8,
+          "n_experts": 4,
+          "max_epochs": 300,
+          "patience": 50
+        }
+      },
+      "train_time_mean_sec": 24.021591544151306,
+      "train_time_std_sec": 3.3342265459777254,
+      "train_time_runs_sec": [
+        27.26768159866333,
+        26.614346981048584,
+        18.344971656799316,
+        20.638286352157593,
+        28.8253116607666,
+        20.947081565856934,
+        21.76634383201599,
+        26.75006914138794,
+        26.057760000228882,
+        23.00406265258789
+      ]
+    }
+  },
+  "citeseer": {
+    "aria_ensemble2": {
+      "mean": 76.61730229854584,
+      "std": 1.638118201722745,
+      "runs": [
+        74.92492198944092,
+        76.72672867774963,
+        76.72672867774963,
+        76.87687873840332,
+        77.5943398475647,
+        73.11320900917053,
+        75.52552819252014,
+        79.2792797088623,
+        77.77777910232544,
+        77.62762904167175
+      ],
+      "member_configs": {
+        "aria": {
+          "hidden_dim": 64,
+          "lr": 0.001,
+          "weight_decay": 0.0005,
+          "dropout": 0.5,
+          "num_layers": 3,
+          "rank": 32,
+          "max_epochs": 300,
+          "patience": 50
+        },
+        "aria_phg": {
+          "hidden_dim": 64,
+          "lr": 0.001,
+          "weight_decay": 5e-05,
+          "dropout": 0.5,
+          "num_layers": 2,
+          "rank": 16,
+          "aux_lambda": 0.5,
+          "pe_k": 16,
+          "max_epochs": 300,
+          "patience": 50
+        },
+        "aria_moe": {
+          "hidden_dim": 64,
+          "lr": 0.001,
+          "weight_decay": 0.0005,
+          "dropout": 0.5,
+          "num_layers": 3,
+          "rank": 16,
+          "n_experts": 8,
+          "max_epochs": 300,
+          "patience": 50
+        }
+      }
+    }
+  },
+  "texas": {
+    "aria_ensemble2": {
+      "mean": 80.27026951313019,
+      "std": 5.545482979469738,
+      "runs": [
+        83.7837815284729,
+        78.37837934494019,
+        72.972971200943,
+        86.48648858070374,
+        89.18918967247009,
+        81.08108043670654,
+        72.972971200943,
+        72.972971200943,
+        81.08108043670654,
+        83.7837815284729
+      ],
+      "member_configs": {
+        "aria": {
+          "hidden_dim": 64,
+          "lr": 0.005,
+          "weight_decay": 0.0005,
+          "dropout": 0.3,
+          "num_layers": 2,
+          "rank": 16,
+          "max_epochs": 500,
+          "patience": 100
+        },
+        "aria_phg": {
+          "hidden_dim": 32,
+          "lr": 0.01,
+          "weight_decay": 0.0005,
+          "dropout": 0.3,
+          "num_layers": 2,
+          "rank": 16,
+          "aux_lambda": 0.5,
+          "pe_k": 8,
+          "max_epochs": 500,
+          "patience": 100
+        },
+        "aria_moe": {
+          "hidden_dim": 64,
+          "lr": 0.001,
+          "weight_decay": 0.0005,
+          "dropout": 0.5,
+          "num_layers": 3,
+          "rank": 32,
+          "n_experts": 4,
+          "max_epochs": 500,
+          "patience": 100
+        }
+      }
+    }
+  },
+  "wisconsin": {
+    "aria_ensemble2": {
+      "mean": 84.11764800548553,
+      "std": 2.8346728300209034,
+      "runs": [
+        80.39215803146362,
+        84.3137264251709,
+        84.3137264251709,
+        86.27451062202454,
+        84.3137264251709,
+        86.27451062202454,
+        82.35294222831726,
+        80.39215803146362,
+        82.35294222831726,
+        90.19607901573181
+      ],
+      "member_configs": {
+        "aria": {
+          "hidden_dim": 64,
+          "lr": 0.01,
+          "weight_decay": 0.0005,
+          "dropout": 0.5,
+          "num_layers": 2,
+          "rank": 16,
+          "max_epochs": 500,
+          "patience": 100
+        },
+        "aria_phg": {
+          "hidden_dim": 64,
+          "lr": 0.01,
+          "weight_decay": 0.0005,
+          "dropout": 0.3,
+          "num_layers": 3,
+          "rank": 32,
+          "aux_lambda": 1.0,
+          "pe_k": 8,
+          "max_epochs": 500,
+          "patience": 100
+        },
+        "aria_moe": {
+          "hidden_dim": 64,
+          "lr": 0.01,
+          "weight_decay": 0.0005,
+          "dropout": 0.3,
+          "num_layers": 2,
+          "rank": 32,
+          "n_experts": 4,
+          "max_epochs": 500,
+          "patience": 100
+        }
+      }
+    }
+  },
+  "cornell": {
+    "aria_ensemble2": {
+      "mean": 73.51351380348206,
+      "std": 4.324324056506526,
+      "runs": [
+        67.56756901741028,
+        75.67567825317383,
+        72.972971200943,
+        75.67567825317383,
+        70.27027010917664,
+        72.972971200943,
+        75.67567825317383,
+        70.27027010917664,
+        83.7837815284729,
+        70.27027010917664
+      ],
+      "member_configs": {
+        "aria": {
+          "hidden_dim": 64,
+          "lr": 0.01,
+          "weight_decay": 0.0005,
+          "dropout": 0.5,
+          "num_layers": 2,
+          "rank": 32,
+          "max_epochs": 500,
+          "patience": 100
+        },
+        "aria_phg": {
+          "hidden_dim": 32,
+          "lr": 0.005,
+          "weight_decay": 0.0005,
+          "dropout": 0.5,
+          "num_layers": 2,
+          "rank": 16,
+          "aux_lambda": 1.0,
+          "pe_k": 16,
+          "max_epochs": 500,
+          "patience": 100
+        },
+        "aria_moe": {
+          "hidden_dim": 64,
+          "lr": 0.01,
+          "weight_decay": 0.0005,
+          "dropout": 0.5,
+          "num_layers": 2,
+          "rank": 16,
+          "n_experts": 4,
+          "max_epochs": 500,
+          "patience": 100
+        }
+      }
+    }
+  },
+  "usa-airports": {
+    "aria_ensemble2": {
+      "mean": 58.833333253860474,
+      "std": 3.1057738851993513,
+      "runs": [
+        55.83333373069763,
+        56.66666626930237,
+        63.749998807907104,
+        55.416667461395264,
+        57.91666507720947,
+        60.00000238418579,
+        63.749998807907104,
+        57.91666507720947,
+        55.416667461395264,
+        61.666667461395264
+      ],
+      "member_configs": {
+        "aria": {
+          "hidden_dim": 64,
+          "lr": 0.001,
+          "weight_decay": 0.0005,
+          "dropout": 0.3,
+          "num_layers": 2,
+          "rank": 16,
+          "max_epochs": 300,
+          "patience": 50
+        },
+        "aria_phg": {
+          "hidden_dim": 32,
+          "lr": 0.001,
+          "weight_decay": 0.0005,
+          "dropout": 0.5,
+          "num_layers": 2,
+          "rank": 32,
+          "aux_lambda": 0.5,
+          "pe_k": 16,
+          "max_epochs": 300,
+          "patience": 50
+        },
+        "aria_moe": {
+          "hidden_dim": 64,
+          "lr": 0.001,
+          "weight_decay": 0.0005,
+          "dropout": 0.3,
+          "num_layers": 3,
+          "rank": 32,
+          "n_experts": 8,
+          "max_epochs": 300,
+          "patience": 50
+        }
+      }
+    }
+  },
+  "brazil-airports": {
+    "aria_ensemble2": {
+      "mean": 49.64285671710968,
+      "std": 6.277999043998129,
+      "runs": [
+        60.71428656578064,
+        42.85714328289032,
+        39.28571343421936,
+        57.14285969734192,
+        50.0,
+        46.42857015132904,
+        46.42857015132904,
+        46.42857015132904,
+        53.57142686843872,
+        53.57142686843872
+      ],
+      "member_configs": {
+        "aria": {
+          "hidden_dim": 64,
+          "lr": 0.005,
+          "weight_decay": 0.0005,
+          "dropout": 0.3,
+          "num_layers": 2,
+          "rank": 32,
+          "max_epochs": 500,
+          "patience": 100
+        },
+        "aria_phg": {
+          "hidden_dim": 64,
+          "lr": 0.01,
+          "weight_decay": 0.0005,
+          "dropout": 0.3,
+          "num_layers": 3,
+          "rank": 32,
+          "aux_lambda": 0.5,
+          "pe_k": 16,
+          "max_epochs": 500,
+          "patience": 100
+        },
+        "aria_moe": {
+          "hidden_dim": 32,
+          "lr": 0.01,
+          "weight_decay": 0.0005,
+          "dropout": 0.3,
+          "num_layers": 3,
+          "rank": 32,
+          "n_experts": 4,
+          "max_epochs": 500,
+          "patience": 100
+        }
+      }
+    }
+  },
+  "europe-airports": {
+    "aria_ensemble2": {
+      "mean": 47.03703731298447,
+      "std": 6.183940548935377,
+      "runs": [
+        44.44444477558136,
+        35.80246865749359,
+        38.27160596847534,
+        48.148149251937866,
+        51.851850748062134,
+        55.55555820465088,
+        53.08641791343689,
+        43.209877610206604,
+        51.851850748062134,
+        48.148149251937866
+      ],
+      "member_configs": {
+        "aria": {
+          "hidden_dim": 32,
+          "lr": 0.001,
+          "weight_decay": 0.0005,
+          "dropout": 0.5,
+          "num_layers": 3,
+          "rank": 32,
+          "max_epochs": 500,
+          "patience": 100
+        },
+        "aria_phg": {
+          "hidden_dim": 32,
+          "lr": 0.01,
+          "weight_decay": 5e-05,
+          "dropout": 0.5,
+          "num_layers": 2,
+          "rank": 16,
+          "aux_lambda": 1.0,
+          "pe_k": 16,
+          "max_epochs": 500,
+          "patience": 100
+        },
+        "aria_moe": {
+          "hidden_dim": 64,
+          "lr": 0.01,
+          "weight_decay": 0.0005,
+          "dropout": 0.5,
+          "num_layers": 3,
+          "rank": 16,
+          "n_experts": 8,
+          "max_epochs": 500,
+          "patience": 100
+        }
+      }
+    }
+  },
+  "actor": {
+    "aria_ensemble2": {
+      "mean": 35.59210538864136,
+      "std": 0.5750466292231731,
+      "runs": [
+        36.250001192092896,
+        35.92105209827423,
+        34.67105329036713,
+        35.1973682641983,
+        35.92105209827423
+      ],
+      "member_configs": {
+        "aria": {
+          "hidden_dim": 64,
+          "lr": 0.005,
+          "weight_decay": 0.0005,
+          "dropout": 0.3,
+          "num_layers": 2,
+          "rank": 8,
+          "max_epochs": 300,
+          "patience": 50
+        },
+        "aria_phg": {
+          "hidden_dim": 32,
+          "lr": 0.005,
+          "weight_decay": 0.0005,
+          "dropout": 0.3,
+          "num_layers": 2,
+          "rank": 8,
+          "aux_lambda": 0.5,
+          "pe_k": 16,
+          "max_epochs": 300,
+          "patience": 50
+        },
+        "aria_moe": {
+          "hidden_dim": 64,
+          "lr": 0.001,
+          "weight_decay": 0.0005,
+          "dropout": 0.3,
+          "num_layers": 2,
+          "rank": 16,
+          "n_experts": 4,
+          "max_epochs": 300,
+          "patience": 50
+        }
+      }
+    }
+  },
+  "pubmed": {
+    "aria_ensemble2": {
+      "mean": 83.60547661781311,
+      "std": 2.2361642852382713,
+      "runs": [
+        80.80628514289856,
+        86.23225092887878,
+        83.4432065486908,
+        81.51623010635376,
+        86.02941036224365
+      ],
+      "member_configs": {
+        "aria": {
+          "hidden_dim": 32,
+          "lr": 0.005,
+          "weight_decay": 0.0005,
+          "dropout": 0.5,
+          "num_layers": 2,
+          "rank": 8,
+          "max_epochs": 300,
+          "patience": 50
+        },
+        "aria_phg": {
+          "hidden_dim": 32,
+          "lr": 0.001,
+          "weight_decay": 0.0005,
+          "dropout": 0.3,
+          "num_layers": 2,
+          "rank": 16,
+          "aux_lambda": 1.0,
+          "pe_k": 8,
+          "max_epochs": 300,
+          "patience": 50
+        },
+        "aria_moe": {
+          "hidden_dim": 64,
+          "lr": 0.01,
+          "weight_decay": 0.0005,
+          "dropout": 0.5,
+          "num_layers": 2,
+          "rank": 32,
+          "n_experts": 8,
+          "max_epochs": 300,
+          "patience": 50
+        }
+      }
+    }
+  },
+  "amazon-photo": {
+    "aria_ensemble2": {
+      "mean": 93.60366225242615,
+      "std": 0.7709700583447295,
+      "runs": [
+        92.74035096168518,
+        94.04839873313904,
+        94.63701844215393,
+        92.67495274543762,
+        93.91759037971497
+      ],
+      "member_configs": {
+        "aria": {
+          "hidden_dim": 64,
+          "lr": 0.001,
+          "weight_decay": 0.0005,
+          "dropout": 0.3,
+          "num_layers": 3,
+          "rank": 8,
+          "max_epochs": 300,
+          "patience": 50
+        },
+        "aria_phg": {
+          "hidden_dim": 32,
+          "lr": 0.001,
+          "weight_decay": 0.0005,
+          "dropout": 0.3,
+          "num_layers": 2,
+          "rank": 16,
+          "aux_lambda": 0.5,
+          "pe_k": 16,
+          "max_epochs": 300,
+          "patience": 50
+        },
+        "aria_moe": {
+          "hidden_dim": 64,
+          "lr": 0.001,
+          "weight_decay": 0.0005,
+          "dropout": 0.3,
+          "num_layers": 3,
+          "rank": 8,
+          "n_experts": 8,
+          "max_epochs": 300,
+          "patience": 50
+        }
+      }
+    }
+  }
+}

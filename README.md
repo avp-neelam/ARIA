@@ -1,4 +1,4 @@
-# ARIA Benchmark
+# ARIA
 
 Benchmark suite for the ARIA graph-learning architecture family: a
 per-node belief gate that mixes self / 1-hop / 2-hop / low-rank-global
